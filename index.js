@@ -11,7 +11,7 @@ function main(option, num) {
 }
 
 function function1(num) {
-  return 1 / (num - (num ^ 2) + 2);
+  return 1 / (num - Math.pow(num, 2) + 2);
 }
 
 function function2() {}
