@@ -1,16 +1,19 @@
 function main(option, num) {
   if (option === 1) {
-    return function1(num);
+    return rationalFunction(num);
   } else if (option === 2) {
     return function2();
   } else if (option === 3) {
     return calculateLogarithm(num);
+  //More options can be added
   } else {
     return "Opción inválida";
   }
 }
 
-function function1() { }
+function rationalFunction(num) {
+  return 1 / (num - Math.pow(num, 2) + 2);
+}
 
 function function2() { }
 
@@ -27,6 +30,4 @@ calculateLogarithm = (number) => {
   }
 }
 
-main();
-
-module.exports = { main }
+module.exports = { main };
