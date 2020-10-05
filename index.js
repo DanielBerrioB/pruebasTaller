@@ -11,16 +11,22 @@ function main(option, num) {
 }
 
 function function1(num) {
-  return 1 / (num - (num ^ 2) + 2);
+  
 }
-
+/**
+ * 
+ * @param {*} num Valor a evaluar en la función implementada
+ */
 function function2(num) {
+  // Flujo 1, división por cero
   if (num===1) {
     return "ZeroDivision"
   }
+  // Flujo 2, Fuera de dominio
   if (num<1) {
     return "RootError"
   }
+  // Flujo 3, camino ideal
   return (num + 4)/Math.sqrt(num-1)
 }
 
